@@ -13,3 +13,6 @@ semantic ui admin template
 ###v0.1 todos
 >1. login.html
 >2. index.html
+
+
+[主页](http://itwarcraft.github.io/semantic-ui-admin)

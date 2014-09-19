@@ -3,16 +3,15 @@ body{
 	margin:0px;
 	font-family:Verdana,Arial,Helvetica,Sans-serif;
 }
-
+.white{
+	color:#FFF;
+}
 /**登陆界面 开始*/
 .login-header{
 	height:160px;
 	background-color:#0066B1;
 	margin-top:-8px;
 	margin-left:-8px;margin-right:-8px;
-}
-.white{
-	color:#FFF;
 }
 .login-header-row1{
 	height:60px;
@@ -23,7 +22,10 @@ body{
 .login-header-h2{
 	font-size:32px;
 }
-/**登陆界面结束*/
+.ui.grid.login-div{
+	margin-top: 48px;;
+}
+/**登陆界面CSS结束*/
 
 /**首页开始*/
 
