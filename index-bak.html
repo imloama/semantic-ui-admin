@@ -36,11 +36,15 @@
 				  	</a>
 				 	<a class="white item">
 				      <i class="settings large icon"></i>
-				      	功能界面
+				      	项目管理
 				  	</a>
-				  	<a class="white item ">
-					   <i class="star large icon"></i>
-					   	系统管理
+				  <a class="blue item">
+				      	<i class="lab large icon"></i>
+				      	进销存
+				  	</a>
+				  	<a class="blue item ">
+					      <i class="star large icon"></i>
+					     	系统管理
 					  </a>
 				 </div>
 			</div>
@@ -78,36 +82,66 @@
 			<!--左侧菜单-->
 			<div id="left-col" class="one wide column">
 				<div id="left-menu" class="ui vertical pointing accordion animated menu">
-					<!--左侧菜单标题-->
 					<div class="active title">
-						<i class="dropdown icon"></i>工作台
-					</div><!--左侧菜单标题 结束-->
-					<!--左侧菜单内容区-->
+						<i class="dropdown icon"></i>项目管理
+					</div>
 					<div class="active content">
 						<div class="ui animated list">
-							<div class=" active item">
-								<i class="home outline icon"></i>
-								<div class="content"> 
-							          <div class="header"><a href="#" class="unstyledlink">工作台</a></div>
-							    </div>
-							</div>
-							<div class="item">
-								<i class="fa fa-bar-chart outline icon"></i>
-								<div class="content"> 
-							          <div class="header"><a href="#" class="unstyledlink">统计数据</a></div>
-							    </div>
-							</div>
-							<div class=" item">
-								<i class="calendar outline icon"></i>
-								<div class="content"> 
-							          <div class="header"><a href="#" class="unstyledlink">工作日历</a></div>
-							    </div>
-							</div>
+					
+						<div class=" active item">
+							<i class="heart outline icon"></i>
+							<div class="content"> 
+						          <div class="header"><a href="#" class="unstyledlink">项目管理</a></div>
+						    </div>
+						</div>
+						<div class=" item">
+							<i class="home outline icon"></i>
+							<div class="content"> 
+						          <div class="header"><a href="#" class="unstyledlink">任务管理</a></div>
+						    </div>
+						</div>
+						<div class="item">
+							<i class="home outline icon"></i>
+							<div class="content"> 
+						          <div class="header"><a href="#" class="unstyledlink">BUG管理</a></div>
+						    </div>
+						</div>
+						
+					</div>
+					</div>
+					
+					<div class="title">
+						<i class="dropdown icon"></i>系统管理
+					</div>
+					<div class="content">
+						<div class="ui animated list">
+						  <div class="item"><i class="users icon"></i>
+						      <div class="content"> 
+						          <div class="header"><a href="#" class="unstyledlink">用户管理</a></div>
+						      </div>
 						  </div>
-					</div><!--左侧菜单内容区   结束-->
+						  <div class="item"><i class="male icon"></i>
+						      <div class="content">
+						          <div class="header"><a href="#" class="unstyledlink">角色管理</a></div>
+						      </div>
+						  </div>
+						  <div class="item"><i class="legal icon"></i>
+						      <div class="content">
+						          <div class="header"><a href="#" class="unstyledlink">角色授权</a></div>
+						      </div>
+						  </div>
+						    <div class="item"><i class="fa-tasks icon"></i>
+						      <div class="content">
+						          <div class="header"><a href="#" class="unstyledlink">菜单管理</a></div>
+						      </div>
+						  </div>
+						        </div>
+						
+						
+					</div>
 				</div>
-			</div><!--左侧菜单 结束-->
-			
+			</div>
+			<!--左侧菜单 结束-->
 			
 			<!--右侧内容-->
 			<div class="eleven wide column" style="width:100%;">
@@ -115,7 +149,9 @@
 				<div id="content-nav" class="ui breadcrumb">
 					<a class="section">首页</a>
 					<div class="divider">/</div>
-					<div class="active section">工作台</div>
+					<a class="section">项目管理</a>
+					<div class="divider">/</div>
+					<div class="active section">项目管理</div>
 				</div>
 				<!--面包屑导航 结束-->
 				<div class="ui clearing divider">
@@ -123,24 +159,46 @@
 				<!--内容页面-->
 				<div class="container">
 					<div class="ui celled grid">
-						<!--综合信息展示区-->
 						<div class="row">
 							<div class="column">
-								综合信息展示区
+								<div class="ui form segment">
+									<form>
+										<div class="two fields">
+											<div class="inline field"><label>姓名：</label><input type="text"></div>
+											<div class="inline field"><label>状态：</label><input type="text"></div>
+										</div>
+									</form>
+								</div>
 							</div>
-						</div><!--综合信息展示区-->
-						<!--图表展示区-->
+						</div>
 						<div class="row">
 							<div class="column">
-								图表展示
+								<table class="ui sortable table segment">
+									<thead>
+										<tr><th>姓名</th><th>状态</th><th>备注</th></tr>
+									</thead>
+									<tbody>
+										<tr><td>张三</td><td>No Action</td><td>无</td></tr>
+										<tr><td>张三2</td><td>已接受</td><td>电话联系</td></tr>
+										<tr><td>张三3</td><td>拒绝</td><td>无</td></tr>
+									</tbody>
+									<tfoot>
+										<tr><th>3个用户</th><th>1已接受</th><th></th></tr>
+									</tfoot>
+								</table>
 							</div>
-						</div><!--图表展示区-->
-						<!--日历展示区-->
+						</div>
 						<div class="row">
-							<div class="column">
-								fullcalendar
+							<div class="ui pagination menu">
+								<a class="icon item"><i class="icon left arrow"></i></a>
+								<a class="active item">1</a>
+								<div class="disabled item">...</div>
+								<a class="item">10</a>
+								<a class="item">11</a>
+								<a class="item">12</a>
+								<a class="icon item"><i class="icon right arrow"></i></a>
 							</div>
-						</div><!--日历展示区  结束-->
+						</div>
 					</div>
 				</div>
 				<!--内容页面  结束-->
